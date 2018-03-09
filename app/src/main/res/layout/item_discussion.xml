@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/list_item_side_padding"
+    android:paddingRight="@dimen/list_item_side_padding"
+    android:paddingTop="@dimen/list_item_pole_padding"
+    android:paddingBottom="@dimen/list_item_pole_padding"
+    >
+    <TextView
+        android:id="@+id/name_initial_text_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:text="CD"
+        android:textSize="@dimen/contact_icon_text_size"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/list_item_side_padding"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/receiver_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corentin Dupont"
+            android:textSize="@dimen/contact_name_text_size"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/last_message_content_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Bonjour!Je vous envois ce message dans le but de vous envoyer un message long !"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
